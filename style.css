@@ -1,0 +1,534 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s all;
+}
+
+html{
+    font-size: 90%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header{
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    background: rgb(250, 249, 250);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    padding: 0 20px;
+}
+.logo{
+    width: 130px;
+}
+header .navbar a{
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
+    color: black;
+    margin: 0 10px;
+}
+header .navbar a:hover{
+    color: blueviolet;
+}
+header .icons a{
+    font-size: 1.2rem;
+    color: black;
+    margin: 0 10px;
+}
+header .icons a:hover{
+    color: blueviolet;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    width: 100%;
+    padding: auto;
+    background: url(picture/img\ bg\ 6.jpg) no-repeat center center;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.content {
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 2rem;
+    color: rgb(15, 15, 15);
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+.content h3:hover{
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+}
+
+.content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: blueviolet;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+  
+}
+
+.content a:hover {
+    background: darkviolet;
+    -webkit-text-stroke: 2px rgb(240, 208, 208);
+    color: transparent;
+}
+
+
+.about{
+    background: #e3d5e7;
+    min-height: 100vh; 
+    width: 100%;
+    margin-top: 30px;
+}
+.about h2{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.about h2:hover{
+    -webkit-text-stroke: 2px rgb(14, 13, 13);
+    color: transparent;
+}
+.about img{
+    width: 17%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.about img:hover{
+    transform: translateY(-10px);
+}
+.about p{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.about li{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.about video{
+    width: 450px;
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px; 
+}
+.education{
+    min-height: 100vh; 
+    width: 100%;
+    margin-top: 30px;
+}
+.education h2{
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+}
+.education h2:hover{
+    -webkit-text-stroke: 2px rgb(14, 13, 13);
+    color: transparent;
+}
+.education-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px
+}
+.education-list div{
+    background: rgb(110, 92, 92);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, trasnform 0.5s;
+}
+.education-list div:hover{
+    background: #d4a5c6;
+    transform: translateY(-10px);
+}
+.education h3{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.education img{
+    width: 80%;
+}
+.education li{
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.education button{
+    font-size: 15px;
+    color: rgb(91, 69, 216);
+    display: inline-block;
+    margin-top: 20px;
+}
+.education button:hover{
+    color: rgb(223, 29, 94);
+}
+.experience{
+    background: #e3d5e7;
+    min-height: 100vh; 
+    width: 100%;
+    margin-top: 30px;
+}
+.experience h2{
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+.experience h2:hover{
+    -webkit-text-stroke: 2px rgb(14, 13, 13);
+    color: transparent;
+}
+.experience img{
+    width: 30%;
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto;
+}
+.experience img:hover{
+    transform: translateY(-10px);
+}
+.experience h3{
+    font-size: 20px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.experience p{
+    font-size: 17px;
+    color: rgb(44, 43, 43);
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;  
+}
+.skills{
+    min-height: 100vh; 
+    width: 100%;
+    margin-top: 30px;
+}
+.skills h2{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+.skills h2:hover{
+    -webkit-text-stroke: 2px rgb(14, 13, 13);
+    color: transparent;
+}
+.skills h3{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(238, 34, 34);
+    font-size: 16px;
+    text-align: center;
+}
+.progress-bar{
+    background: plum;
+    width: 600px;
+    height: 2;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.progress-bar div{
+    height: 10px;
+    border-radius: 10px;
+    width: 20%;
+}
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background: #f7f9fc;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.html{
+    background: rgb(94, 93, 93);
+    animation: html 1s linear forwards;
+}
+.css{
+    background: rgb(94, 93, 93);
+    animation: css 1s linear forwards;
+}
+.microsoftwords{
+    background: rgb(94, 93, 93);
+    animation: microsoftwords 1s linear forwards;
+}
+.powerpoint{
+    background: rgb(94, 93, 93);
+    animation: powerpoint 1s linear forwards;
+}
+.canva{
+    background: rgb(94, 93, 93);
+    animation: canva 1s linear forwards;
+}
+.capcut{
+    background: rgb(94, 93, 93);
+    animation: capcut 1s linear forwards;
+}
+.html span{
+    border: 1px solid plum;
+}
+.css span{
+    border: 1px solid  rgb(146, 196, 105);
+}
+.microsoftwords span{
+    border: 1px solid  rgb(216, 97, 97);
+}
+.powerpoint span{
+    border: 1px solid  rgb(172, 151, 59);
+}
+.canva span{
+    border: 1px solid  black;
+}
+.capcut span{
+    border: 1px solid  rgb(177, 90, 50);
+}
+@keyframes html{
+    100%{
+        width: 50%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 50%;
+    }
+}
+@keyframes microsoftwords{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes powerpoint{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes canva{
+    100%{
+        width: 60%;
+    }
+}
+@keyframes capcut{
+    100%{
+        width: 70%;
+    }
+}
+.contact {
+    position: relative; 
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 30px; 
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  url(picture/img\ bg\ 9.jpg);
+    background-size: cover;
+}
+
+.contact h2 {
+    font-size: 30px;
+    color: rgb(15, 15, 15);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+.contact h2:hover{
+    -webkit-text-stroke: 2px rgb(14, 13, 13);
+    color: transparent;
+}
+.contactInfo i{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.contactInfo h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0d0d0e;
+    text-align: left;
+}
+
+.contactInfo p {
+    font-weight: 300;
+    color: #0c0c0c;
+    padding-top: 10px;
+    text-align: left;
+
+}
+
+.contactForm {
+    width: 100%;
+    max-width: 800px;
+    padding-top: 40px;
+}
+
+.contactForm h3 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.input.box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input.box input,
+.input.box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f8f4f4;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.input.box span {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.input.box input:focus + span,
+.input.box input:valid + span,
+.input.box textarea:focus + span,
+.input.box textarea:valid + span {
+    top: -20px;
+    font-size: 12px;
+    color: #333;
+}
+.input.box input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.input.box input[type="submit"]:hover {
+    background-color: #d88888;
+}
+footer{
+    background: #e3d5e7;
+    min-height: 50vh; 
+    width: 100%;
+    margin-top: 30px;
+}
+.footerContainer{
+    width: 100%;
+    padding: 20px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f7f9fc;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2rem;
+    color: #0c0c0c;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: #0c0c0c;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: #e3d5e7;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 10px 0;
+}
+.footerNav{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 17px;
+}
+.footerNav li{
+    padding-top: 10px;
+}
+.footerNav li a:hover{
+    color: #0f0f0f;
+}
+.footerBottom{
+    background-color: #0c0c0c;
+    padding: 20px;
+    text-align: center;
+    margin-top: 90px;
+}
+.footerBottom p{
+    color: #f7f9fc;
+}
+
+
+
